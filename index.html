@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoja de Vida - Santiago Jaramillo Velasquez</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="overlay" onclick="closeSidebar()"></div>
+    <header>
+      <h1>Santiago Jaramillo Velasquez</h1>
+      <div class="menu-toggle" onclick="toggleSidebar()">☰</div>
+      <button class="dark-toggle" onclick="toggleTheme()">Cambiar tema</button>
+    </header>
+  
+    <div class="sidebar" id="sidebar">
+      <nav>
+        <ul>
+          <li><a href="#info" onclick="closeSidebar()">Información Personal</a></li>
+          <li><a href="#bio" onclick="closeSidebar()">Biografía</a></li>
+          <li><a href="#sobre" onclick="closeSidebar()">Más sobre mí</a></li>
+          <li><a href="#experiencia" onclick="closeSidebar()">Experiencia Laboral</a></li>
+          <li><a href="#habilidades" onclick="closeSidebar()">Habilidades</a></li>
+          <li><a href="#contacto" onclick="closeSidebar()">Contáctame</a></li>
+          <li><a href="#proyectos" onclick="closeSidebar()">Proyectos</a></li>
+        </ul>
+      </nav>
+    </div>
+  
+    
+
+    <div class="container">
+        <section id="info">
+          <h2>Información Personal</h2>
+          <div class="info-personal">
+            <div class="info-texto">
+              <p>Edad: 22 años</p>
+              <p>Tecnólogo en análisis y desarrollo de sistemas de información</p>
+              <p>Cédula: 1001686786</p>
+              <p>WhatsApp: 319699645</p>
+              <p>Celular o SMS: 3019212173</p>
+            </div>
+            <div class="foto-perfil">
+              <img src="foto.jpg" alt="Foto de Santiago">
+            </div>
+          </div>
+        </section>
+  
+      <section id="bio">
+        <h2>Biografía</h2>
+        <p>Cuento con un dos años y 6 meses de experiencia, la cual esta enfocada en dar soporte a clientes a nivel empresarial u hogar, me gusta todo lo que tiene que ver con computadoras, puedo hacerles mantenimiento y arreglar problemas con el sistema o con componentes, se montar computadoras, servidores entre otras labores dentro de las TI soy tecnologo en analisis y desarrollo de sistemas de informacion.
+          No cuento con la experiencia necesaria certificada en el ambiente en el que me quiero desempeñar que es desarrollo web, por falta de oportunidades y la necesidad de firmar contrato de aprendizaje para poderme graduarme, firme mi contrato en una empresa como analista, pero fue en telecomunicaciones, me gustaria poder desempeñarme y obtener la experiencia en el mundo laborar del desarrollo web y labores similares que afronten un reto para mi, me acoplo facil a cualquier ambiente laborar, soy muy versatil y aprendo mur rapido, solo pido una oportunidad de poder monstrar mis habilidades, me conformo con un sueldo base si me dan la oportunidad de obtener los meses de experiencia que se requiere como desarrollador web.
+        </p>
+      </section>
+  
+      <section id="sobre">
+        <h2>Más sobre mí</h2>
+        <p>Soy alguien muy responsable, y atento con mis labores asigandas para cumplirlas de manera correcta y en el tiemplo establecido, soy muy organizado y perfeccionista, es mis planes esta realizar la ingenieria en software pero de momento estoy estudiando de manera autodidacta para mas adelante de un desarrollador full stack, quiero ser un empleado completo en lo que me dicte y requiera la empresa.</p>
+      </section>
+  
+      <section id="experiencia">
+        <h2>Experiencia Laboral</h2>
+          <br>
+        <h3>Analista vertical (ComWare)</h3>
+        <h4>Agosto 2021 - Febrero 2023</h4>
+        <p>en el cargo de analista vertical se da soporte técnico para ayudar al cliente a solucionar el problema que presente en el momento con las redes de las empresas a las cuales TIGO les provee el servicio, ya sea Internet básico (cobre, hfc) o Internet avanzado de(fibra óptica o GPON)</p>
+          <br>
+        <h3>Analista (CONECTA TELECOMUNICACIONES S.A.S)</h3>
+        <h4>Marzo 2023 - Abril 2023</h4>
+        <p>soporte lvl 1 lvl 2 a teconologos en sitio, soporte empresarial en telecomunicaciones</p>
+          <br>            
+        <h3>Analista (WEBHELP COLOMBIA)</h3>
+        <h4>Noviembre 2023 - Abril 2024</h4>
+        <p>prevencion de fraude y robo de cuentas de mercadolibre y mercadopago, garantizar y asesoral al cliente a mantener segura la cuenta o recuperacion de s u cuenta entre otros</p>
+          <br>
+        <h3>Cobrador domiciliario (carniceria jh)</h3>
+        <h4>Junio 2024 - Agosto 2024</h4>
+        <p>entrega de domicio, productos carnicos, y oficios varios dentro de la carniceria, como atencion al cliente, recibir pedidos, realizar inventario, aseo general, asistente de mesa</p>
+          <br>
+        <h3>Analista (Emtelco)</h3>
+        <h4>Octubre 2024 - Actualmente</h4>
+        <p>analista de factura epm, creador de experiencia senior, se da soporte en cuanto dudas referente a facturas, registro de casos, reclamos o peticiones, orientacion general de facturas</p>
+      </section>
+  
+      <section id="habilidades">
+        <h2>Habilidades</h2>
+        <label>HTML</label>
+        <div class="progress"><div class="progress-bar" style="width: 90%"></div></div>
+        <label>CSS</label>
+        <div class="progress"><div class="progress-bar" style="width: 90%"></div></div>
+        <label>JavaScript (JV)</label>
+        <div class="progress"><div class="progress-bar" style="width: 50%"></div></div>
+      </section>
+  
+      <section id="contacto">
+        <h2>Contáctame</h2>
+        <form id="formulario-contacto" action="https://formspree.io/f/xgvkgyzv" method="POST">
+          <input type="text" name="nombre" placeholder="Tu nombre" required>
+          <input type="email" name="email" placeholder="Tu correo" required>
+          <textarea name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+          <button type="submit">Enviar</button>
+          <div id="mensaje-confirmacion">Gracias por el mensaje.</div>
+        </form>
+      </section>
+  
+      <section id="proyectos">
+        <h2>Proyectos</h2>
+        <p>Aún estoy trabajando en subir mis proyectos... pronto estarán disponibles.</p>
+      </section>
+    </div>
+  
+    <script>
+        function toggleTheme() {
+          document.documentElement.dataset.theme =
+            document.documentElement.dataset.theme === 'dark' ? '' : 'dark';
+        }
+    
+        function toggleSidebar() {
+          const sidebar = document.getElementById('sidebar');
+          const overlay = document.getElementById('overlay');
+          sidebar.classList.toggle('active');
+          overlay.classList.toggle('active');
+        }
+    
+        function closeSidebar() {
+          document.getElementById('sidebar').classList.remove('active');
+          document.getElementById('overlay').classList.remove('active');
+        }
+    
+        document.getElementById('formulario-contacto').addEventListener('submit', function (e) {
+          e.preventDefault();
+          const form = e.target;
+          const data = new FormData(form);
+    
+          fetch(form.action, {
+            method: form.method,
+            body: data,
+            headers: {
+              'Accept': 'application/json'
+            }
+          }).then(response => {
+            if (response.ok) {
+              document.getElementById('mensaje-confirmacion').style.display = 'block';
+              form.reset();
+            } else {
+              alert('Hubo un problema al enviar el mensaje.');
+            }
+          }).catch(error => {
+            alert('Error al enviar el mensaje.');
+          });
+        });
+      </script>
+  </body>
+  </html>
+
+
+
+
