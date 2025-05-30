@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FUTURUM</title>
+  <style>
+    /* Estilo general */
+
+  
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('fuuback.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'VT323', monospace;
+      color: #dce97d;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    
+    h1 {
+      font-size: 3rem;
+      text-shadow: 2px 2px #000;
+      margin-bottom: 2rem;
+    }
+
+    .retro-button {
+      font-size: 1rem;
+      padding: 1rem 2rem;
+      background-color: #000;
+      border: 2px solid #9b12a0;
+      color: #dd4ae2;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0 0 10px #77025e;
+      transition: transform 0.2s ease;
+    }
+
+    .retro-button:hover {
+      transform: scale(1.1);
+      background-color: #111;
+    }
+
+
+    .pp {
+      background-color: rgba(83, 83, 83, 0.5);
+      width: 500px;
+      padding: 50px;
+      margin: 20px;
+      color: #dce97d;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+  </style>
+</head>
+<body>
+  <h1>FUTURUM</h1>
+  <div class="pp">
+  <p class="pa">Futurum fue un proyecto que realice a inicios de mi carrera, inicialmente en la tecnica, es algo tosco ya que fue algo improvisado, no me tome mucho tiempo con el, pero tengo 
+    planes para terminarlo y sea mas atractivo y entretenido, en si solo estaba explorando lo que era hacer un juego de plataforma en 2D.
+    <br>
+    Es un juego sencillo, tiene 7 personajes para escoger, el objetivo es pasar el nivel llegando al portal.
+  </p>
+  </div>
+  <a href="futurum(beta)0.2.exe" download class="retro-button" id="downloadBtn">
+    Descargar juego (beta)
+  </a>
+
+  <audio id="clickSound" src="sonido-retro.mp3" preload="auto"></audio>
+
+  <script>
+    const downloadBtn = document.getElementById('downloadBtn');
+    const clickSound = document.getElementById('clickSound');
+
+    downloadBtn.addEventListener('click', () => {
+      clickSound.currentTime = 0;
+      clickSound.play();
+    });
+  </script>
+</body>
+</html>
